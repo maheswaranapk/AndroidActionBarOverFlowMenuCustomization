@@ -1,0 +1,38 @@
+<resources>
+
+
+    <style name="OverflowButton" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_overflow</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+
+        <!-- Change Overflow Menu ListView Item Height & Property -->
+        <item name="listPreferredItemHeightSmall">45dp</item>
+        <item name="listPreferredItemPaddingLeft">5dp</item>
+        <item name="listPreferredItemPaddingRight">5dp</item>
+
+        <!-- API 14 theme customizations can go here. -->
+
+        <!-- Change Action Bar Icon Divider Color -->
+        <item name="actionBarDivider">@null</item>
+
+        <!-- Change Action Bar menu Over Flow Icon -->
+        <item name="actionOverflowButtonStyle">@style/OverflowButton</item>
+
+        <!-- Include Navigation Drawer Icon on left Top Corner of Action Bar -->
+        <item name="homeAsUpIndicator">@drawable/ic_drawer</item>
+    </style>
+
+    <!-- Change Overflow Menu ListView Divider Property -->
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">#FF0000</item>
+        <item name="android:dividerHeight">2dp</item>
+    </style>
+
+
+
+
+</resources>

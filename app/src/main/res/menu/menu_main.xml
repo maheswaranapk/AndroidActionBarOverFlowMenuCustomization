@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/refreshButton"
+        android:icon="@drawable/ic_action_refresh"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/settingButton"
+        android:icon="@drawable/ic_action_settings"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/helpButton"
+        android:icon="@drawable/ic_action_help"
+        app:showAsAction="collapseActionView"
+        android:title="Help 1" />
+    <item
+        android:id="@+id/helpButton1"
+        android:icon="@drawable/ic_action_help"
+        app:showAsAction="collapseActionView"
+        android:title="Help 2" />
+    <item
+        android:id="@+id/helpButton2"
+        android:icon="@drawable/ic_action_help"
+        app:showAsAction="collapseActionView"
+        android:title="Help 3" />
+
+</menu>
