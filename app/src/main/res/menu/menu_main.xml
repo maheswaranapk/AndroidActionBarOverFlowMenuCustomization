@@ -8,11 +8,6 @@
         app:showAsAction="always"
         android:title="" />
     <item
-        android:id="@+id/refreshButton"
-        android:icon="@drawable/ic_action_refresh"
-        app:showAsAction="always"
-        android:title="" />
-    <item
         android:id="@+id/settingButton"
         android:icon="@drawable/ic_action_settings"
         app:showAsAction="always"

@@ -1,38 +1,54 @@
 <resources>
+    <!-- APP Theme which extends Theme App Compact -->
+    <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat">
 
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
 
-    <style name="OverflowButton" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButton</item>
+        <item name="actionOverflowButtonStyle">@style/OverflowButton</item>
+
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+
+        <item name="actionBarDivider">@null</item>
+
+        <!-- Change Status Bar Color works only on KitKat and above -->
+        <item name="android:statusBarColor">#33B5E5</item>
+
+        <item name="android:homeAsUpIndicator">@drawable/ic_drawer</item>
+        <item name="homeAsUpIndicator">@drawable/ic_drawer</item>
+
+        <item name="android:textColor">#FF0000</item>
+    </style>
+
+    <!-- Set Custom Icon for Overflow Button in ActionBar -->
+    <style name="OverflowButton" parent="@style/Widget.AppCompat.ActionButton.Overflow">
         <item name="android:src">@drawable/ic_action_overflow</item>
     </style>
 
-    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    <!-- ActionBar styles for Text Style, Background-->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">#33B5E5</item>
+        <item name="background">@drawable/actionbar_bk</item>
 
-        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
 
-        <!-- Change Overflow Menu ListView Item Height & Property -->
-        <item name="listPreferredItemHeightSmall">45dp</item>
-        <item name="listPreferredItemPaddingLeft">5dp</item>
-        <item name="listPreferredItemPaddingRight">5dp</item>
-
-        <!-- API 14 theme customizations can go here. -->
-
-        <!-- Change Action Bar Icon Divider Color -->
-        <item name="actionBarDivider">@null</item>
-
-        <!-- Change Action Bar menu Over Flow Icon -->
-        <item name="actionOverflowButtonStyle">@style/OverflowButton</item>
-
-        <!-- Include Navigation Drawer Icon on left Top Corner of Action Bar -->
-        <item name="homeAsUpIndicator">@drawable/ic_drawer</item>
+        <item name="actionMenuTextColor">#FF0000</item>
     </style>
 
-    <!-- Change Overflow Menu ListView Divider Property -->
-    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+    <!-- ActionBar styles for Text Style -->
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#00FF00</item>
+    </style>
+
+    <!-- OverFlow menu Styles -->
+    <style name="PopupMenuListView" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
         <item name="android:divider">#FF0000</item>
+
         <item name="android:dividerHeight">2dp</item>
+
+        <item name="android:background">#33B5E5</item>
     </style>
-
-
-
-
 </resources>
