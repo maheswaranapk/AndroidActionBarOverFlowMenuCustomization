@@ -19,6 +19,7 @@
         <item name="android:homeAsUpIndicator">@drawable/ic_drawer</item>
         <item name="homeAsUpIndicator">@drawable/ic_drawer</item>
 
+        <!-- OverFlow Menu Text Color -->
         <item name="android:textColor">#FF0000</item>
     </style>
 
@@ -34,8 +35,6 @@
 
         <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
         <item name="titleTextStyle">@style/MyActionBarTitleText</item>
-
-        <item name="actionMenuTextColor">#FF0000</item>
     </style>
 
     <!-- ActionBar styles for Text Style -->
